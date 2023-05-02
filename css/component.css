@@ -16,6 +16,7 @@
 }
 
 input {
+  width: 12rem;
   height: 2.5rem;
   border-bottom: 1px solid;
 }
@@ -24,8 +25,10 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="text"]:hover,
 input[type="email"]:hover {
-  width: 200px;
+  width: 13rem;
   border-bottom: 1px solid var(--secondery-color);
+  -webkit-transition: width 0.1s;
+  transition: width 0.1s;
 }
 
 textarea {
