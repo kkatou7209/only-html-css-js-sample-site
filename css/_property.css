@@ -1,0 +1,15 @@
+:root {
+  /* theme color */
+  --primary-color: #1C7DFD;
+  --secondery-color: #55B3F1; 
+  --alert: #FF2424;
+
+  /* font size */
+  --x-large: 4rem;
+  --large: 3rem;
+  --medium: 1.2rem;
+  --small: 1rem;
+
+  /* font weight */
+  --fw-headline: 800;
+}

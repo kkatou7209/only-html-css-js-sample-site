@@ -1,0 +1,10 @@
+input {
+  display: block;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+}
