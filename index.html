@@ -3,96 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="./css/resets/destyle.css">
   <link rel="stylesheet" href="./css/resets/myreset.css">
-  <link rel="stylesheet" href="./css/_property.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/component.css">
   <link rel="stylesheet" href="./css/animation.css">
   <title>TwinK Design</title>
 </head>
 <body>
-  <header id="header">
-    <h1 class="header-title">
-      TwinK Design
-    </h1>
-    <nav class="header-nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="">Policy</a>
-        </li>
-        <li class="nav-item">
-          <a href="">History</a>
-        </li>
-        <li class="nav-item">
-          <a href="">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <article class="policy hidden">
-      <h2>
-        <img src="./images/policy.svg" alt="大きなハートを抱えている女性" class="policy-svg">
-        Policy
-      </h2>
-      <section>
-        <h3 class="article-title">UI</h3>
-        <p>直感的に扱いやすく、<br>ユーザーにとってストレスレスな体験を提供します。</p>
-      </section>
-      <section>
-        <h3>アクセシビリティ</h3>
-        <p>全ての人に配慮したサイト構築を実現します。</p>
-      </section>
-      <section>
-        <h3>SEO</h3>
-        <p>ブラウザが見つけやすいサイトを作り、<br>コンテンツをより多くの人のもとへ届けます。</p>
-      </section>
-    </article>
-    <article class="history hidden">
-      <h2 class="headline">
-        History
-        <img src="./images/undraw_education_f8ru.svg" alt="大きな本に触れている男性">
-      </h2>
-      <table class="history-table">
-        <tr>
-          <td>2021年</td>
-          <td>独学でITの勉強を始める</td>
-        </tr>
-        <tr>
-          <td>2022年</td>
-          <td>京都外国語大学　卒業</td>
-        </tr>
-      </table>
-    </article>
-    <article class="contact hidden">
-      <h2 class="headline">
-        <img src="./images/undraw_agreement_re_d4dv.svg" alt="握手を交わす男女">
-        Contact
-      </h2>
-      <form method="post">
-        <div class="form-item">
-          <label for="name">お名前</label>
-          <input type="text" name="name">
-        </div>
-        <div class="form-item">
-          <label for="email">メールアドレス</label>
-          <input type="email" name="email">
-        </div>
-        <div class="form-item">
-          <label for="sentence">ご依頼・ご質問など</label>
-          <textarea name="sentence"  cols="40" rows="10"></textarea>
-        </div>
-        <div class="form-item">
-          <button type="" class="btn submit-btn">送信</button>
-        </div>
-      </form>
-    </article>
-  </main>
-  <footer>
-    <small class="copyright">TwinK</small>
-  </footer>
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="header-title">
+        TwinK Design
+      </h1>
+      <nav class="header-nav">
+        <ul class="header-nav_list">
+          <li class="header-nav_item">
+            <a href="">Policy</a>
+          </li>
+          <li class="header-nav_item">
+            <a href="">History</a>
+          </li>
+          <li class="header-nav_item">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <article class="article-policy hidden">
+        <h2 class="policy_headline">
+          <img src="./images/policy.svg" alt="大きなハートを抱えている女性" class="policy_svg">
+          Policy
+        </h2>
+        <section class="policy_section">
+          <h3>UI</h3>
+          <p>直感的に扱いやすく、<br>ユーザーにとってストレスレスな体験を提供します。</p>
+        </section>
+        <section class="policy_section">
+          <h3>アクセシビリティ</h3>
+          <p>全ての人に配慮したサイト構築を実現します。</p>
+        </section>
+        <section class="policy_section">
+          <h3>SEO</h3>
+          <p>ブラウザが見つけやすいサイトを作り、<br>コンテンツをより多くの人のもとへ届けます。</p>
+        </section>
+      </article>
+      <article class="article-history hidden">
+        <h2 class="history_headline">
+          History
+          <img src="./images/undraw_education_f8ru.svg" alt="大きな本に触れている男性" class="history_svg">
+        </h2>
+        <table class="history_table">
+          <tr>
+            <td>2021年</td>
+            <td>独学でITの勉強を始める</td>
+          </tr>
+          <tr>
+            <td>2022年</td>
+            <td>京都外国語大学　卒業</td>
+          </tr>
+        </table>
+      </article>
+      <article class="article-contact hidden">
+        <h2 class="contact_headline">
+          <img src="./images/undraw_agreement_re_d4dv.svg" alt="握手を交わす男女" class="contact_svg">
+          Contact
+        </h2>
+        <form method="post" id="contact-form">
+          <div class="contact-form_item">
+            <label for="name">お名前</label>
+            <input type="text" name="name" class="contact-form_name">
+          </div>
+          <div class="contact-form_item">
+            <label for="email">メールアドレス</label>
+            <input type="email" name="email" class="contact-form_email">
+          </div>
+          <div class="contact-form_item">
+            <label for="sentence">ご依頼・ご質問など</label>
+            <textarea name="sentence" class="contact-form_textarea"></textarea>
+          </div>
+          <div class="contact-form_item">
+            <button type="" class="btn submit-btn">送信</button>
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer id="footer">
+      <small class="footer_copyright">TwinK</small>
+      <nav class="footer-nav">
+        <ul class="footer-nav_list">
+          <li class="footer-nav_item">Policy</li>
+          <li class="footer-nav_item">History</li>
+          <li class="footer-nav_item">Contact</li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
   <script src="./js/animation.js"></script>
 </body>
 </html>

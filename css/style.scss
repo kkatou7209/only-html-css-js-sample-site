@@ -1,186 +1,346 @@
-body {
-  color: var(--default);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root {
+  /* theme color */
+  --primary-color: #1C7DFD;
+  --secondery-color: #55B3F1; 
+  --alert: #FF2424;
+  --default: #494848;
+
+  /* font size */
+  --x-large: 4rem;
+  --large: 1.7rem;
+  --medium: 1.2rem;
+  --small: 1rem;
+
+  --sm-x-large: 3rem;
+  --sm-large: 1.5rem;
+  --sm-medium: 0.8rem; 
+
+  /* font weight */
+  --fw-h2: 800;
+  --fw-h3: 600;
 }
 
 
-#header {
-  width: 100%;
-  height: 3rem;
 
-  padding: 0 1rem;
+body {
+  color: var(--default);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-
-  background: #fff;
-
-  border: 0.5px var(--default) solid;
-
-
-  display: flex;
-  flex-direction: row;
-
-  .header-title {
-    width: 20rem;
-
-    padding-top: 0.5rem;
-
-    font-size: 1.7rem;
-    font-weight: 900;
-    color: var(--primary-color);
-  }
-
-  .header-nav {
+  #header {
     width: 100%;
-    height: 100%;
-
-
-    .nav-list {
+    height: 3rem;
+  
+    padding: 0 1rem;
+  
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+  
+    background: #fff;
+  
+    border: 0.5px var(--default) solid;
+  
+  
+    display: flex;
+    flex-direction: row;
+  
+    .header-title {
+      width: 20rem;
+      padding-top: 0.5rem;
+  
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--primary-color);
+    }
+  
+    .header-nav {
       width: 100%;
-      height: inherit;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-
-      .nav-item {
-        height: 80%;
-        padding-top: 1rem;
-        margin: 0 3rem;
-
-        a {
-          display: block;
-          height: inherit;
+      height: 100%;
+  
+  
+      .header-nav_list {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+  
+        .header-nav_item {
+          height: 80%;
+          padding-top: 1rem;
+          margin: 0 3rem;
+  
+          a {
+            display: block;
+            height: inherit;
+          }
         }
       }
     }
   }
   
-}
-
-
-
-main {
-  margin-top: 20rem;
-  padding: 3rem 2rem;
-  overflow: hidden;
-
-
-  article {
-    margin: 4rem 1rem;
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      width: 10rem;
-      height: 10rem;
-
-    }
-
-    
-    h2 {
-      margin-top: 1rem;
-      font-size: var(--x-large);
-      font-weight: var(--fw-h2);
-      color: var(--primary-color);
-
-      text-shadow: 3px 0px 4px rgba(4, 9, 16, 0.3);
-    }
-
-    // About
-
-    section {
-      padding: 5rem 0 5rem 0;
-      width: 40rem;
-
+  #main {
+    margin-top: 20rem;
+    padding: 0 2rem;
+  
+    .article-policy,
+    .article-history,
+    .article-contact {
+      margin: 4rem 1rem;
+      padding: 2rem 3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      border-bottom: 1px solid var(--secondery-color);      
-
-      h3 {
-        font-size: var(--large);
-        font-weight: var(--fw-h3);
+  
+      .policy_svg, .history_svg, .contact_svg {
+        width: 10rem;
+        height: 10rem;
+  
       }
-
-      p {
-        margin: 1rem 0 0 1rem;
-        
-        text-align: center;
-        line-height: 2.5rem;
-        font-size: var(--medium);
-      }
-
-    }
-
-
-    // History
-
-    table {
-      margin-top: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    tr td:first-child {
-      padding-right: 3rem;
-    }
-
-    td {
-      height: 4rem;
-    }
-
-
-    // Contact
-    
-    form {
-      width: 40%;
-    
-      margin-top: 3rem;      
-    
-      display: flex;
-      flex-direction: column;
-    }
-    
-    
-    .form-item {
-      margin-top: 3rem;
+  
       
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      .policy_headline, .history_headline, .contact_headline {
+        margin-top: 1rem;
+        font-size: var(--x-large);
+        font-weight: var(--fw-h2);
+        color: var(--primary-color);
+  
+        text-shadow: 3px 0px 4px rgba(4, 9, 16, 0.3);
+      }
+  
+      // About
+  
+      .policy_section {
+        padding: 5rem 0 5rem 0;
+        width: 40rem;
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        border-bottom: 1px solid var(--secondery-color);      
+  
+        h3 {
+          font-size: var(--large);
+          font-weight: var(--fw-h3);
+        }
+  
+        p {
+          margin: 1rem 0 0 1rem;
+          
+          text-align: center;
+          line-height: 2.5rem;
+          font-size: var(--medium);
+        }
+  
+      }
+  
+  
+      // History
+  
+      table {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      tr td:first-child {
+        padding-right: 3rem;
+      }
+  
+      td {
+        height: 4rem;
+      }
+  
+  
+      // Contact
+      
+      #contact-form {
+        width: 40%;
+      
+        margin-top: 3rem;      
+      
+        display: flex;
+        flex-direction: column;
 
-      .btn {
-        background: var(--secondery-color);
+        .contact-form_item {
+          margin-top: 3rem;
+          
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .contact-form_textarea {
+            width: 20rem;
+            height: 10rem;
+          }
+    
+          .btn {
+            background: var(--secondery-color);
+          }
+        }
+      }
+      
+      
+      
+      form .contact-form_item:first-child {
+        margin-top: 0;
       }
     }
-    
-    form .form-item:first-child {
-      margin-top: 0;
+  }
+  
+  footer {
+    height: 5rem;
+  
+    background: rgb(175, 173, 173);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    .footer_copyright {
+  
+      font-size: var(--small);
+      display: block;
+      text-align: center;
+      
+    }
+
+    .footer-nav {
+      width: 0;
+      height: 0;
+      opacity: 0;
     }
   }
 }
 
-footer {
-  height: 5rem;
 
-  background: rgb(175, 173, 173);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 
-  .copyright {
+// レスポンシブ
 
-    font-size: var(--small);
-    display: block;
-    text-align: center;
-    
+@media screen and (max-width: 959px) {
+}
+
+
+
+@media screen and (max-width: 480px) {
+  #wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    #header {
+      width: 100%;
+      animation: none;
+
+      .header-title {
+        padding-top: 0.9rem;
+        text-align: center;
+        font-size: var(--sm-large);
+      }
+
+      //スマートフォンの場合は未表示
+      .header-nav {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    #main {
+      width: 100%;
+
+      padding: 0 0.8rem;
+
+      .article-policy,
+      .article-history,
+      .article-contact {
+        width: 100%;
+        margin: 6rem 0;
+        padding: 0;
+        .policy_svg, .history_svg, .contact_svg {
+          width: 6rem;
+          height: 6rem;
+        }
+
+        .contact_svg {
+          width: 5rem;
+        }
+  
+        .policy_headline,
+        .history_headline,
+        .contact_headline {
+          width: 100%;
+          font-size: var(--sm-x-large);
+        }
+
+        .policy_section {
+          width: 100%;
+
+          p {
+            font-size: var(--sm-medium);
+          }
+        }
+
+        .history_table {
+          tr td:first-child {
+            padding-right: 1.4rem;
+          }
+        }
+
+        #contact-form {
+          width: 100%;
+          padding: 0 1rem;
+
+          .contact-form_item {
+            margin-top: 3rem;
+
+            .contact-form_textarea {
+              width: 100%;
+              height: 9rem;
+            }
+          }
+
+          .contact-form_item:last-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+          }
+
+        }
+      }
+    }
+
+
+    #footer {
+      width: 100%;
+
+      .footer-nav {
+        width: 100%;
+        height: 3rem;
+
+        position: fixed;
+        bottom: 0;
+        opacity: 1;
+        background: #fff;
+        border-top: 0.5px solid var(--default);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .footer-nav_list {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+    }
+
   }
 }
+  
