@@ -1,0 +1,45 @@
+.hide {
+  animation: headerFadeOut 0.2s forwards;
+}
+
+.show {
+  animation: headerFadeIn 0.2s forwards;
+}
+
+.fadein {
+  animation: articleFadeIn 0.4s forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes headerFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  } to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes articleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  } to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

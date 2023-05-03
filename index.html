@@ -9,20 +9,18 @@
   <link rel="stylesheet" href="./css/_property.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/component.css">
-  <title>Sample Site by Kenshiro Kato</title>
+  <link rel="stylesheet" href="./css/animation.css">
+  <title>TwinK Design</title>
 </head>
 <body>
-  <header id="header" class="down-move">
+  <header id="header">
     <h1 class="header-title">
-      Sample Site
+      TwinK Design
     </h1>
     <nav class="header-nav">
       <ul class="nav-list">
         <li class="nav-item">
           <a href="">Policy</a>
-        </li>
-        <li class="nav-item">
-          <a href="">Personality</a>
         </li>
         <li class="nav-item">
           <a href="">History</a>
@@ -34,10 +32,13 @@
     </nav>
   </header>
   <main>
-    <article>
-      <h2 class="headline">Policy</h2>
+    <article class="policy hidden">
+      <h2>
+        <img src="./images/policy.svg" alt="大きなハートを抱えている女性" class="policy-svg">
+        Policy
+      </h2>
       <section>
-        <h3>UI</h3>
+        <h3 class="article-title">UI</h3>
         <p>直感的に扱いやすく、<br>ユーザーにとってストレスレスな体験を提供します。</p>
       </section>
       <section>
@@ -49,17 +50,11 @@
         <p>ブラウザが見つけやすいサイトを作り、<br>コンテンツをより多くの人のもとへ届けます。</p>
       </section>
     </article>
-    <article>
-      <h2 class="headline">Personality</h2>
-      <section>
-        <p></p>
-      </section>
-      <section>
-        <p></p>
-      </section>
-    </article>
-    <article>
-      <h2 class="headline">History</h2>
+    <article class="history hidden">
+      <h2 class="headline">
+        History
+        <img src="./images/undraw_education_f8ru.svg" alt="大きな本に触れている男性">
+      </h2>
       <table class="history-table">
         <tr>
           <td>2021年</td>
@@ -67,12 +62,15 @@
         </tr>
         <tr>
           <td>2022年</td>
-          <td>◯◯大学　卒業</td>
+          <td>京都外国語大学　卒業</td>
         </tr>
       </table>
     </article>
-    <article>
-      <h2 class="headline">Contact</h2>
+    <article class="contact hidden">
+      <h2 class="headline">
+        <img src="./images/undraw_agreement_re_d4dv.svg" alt="握手を交わす男女">
+        Contact
+      </h2>
       <form method="post">
         <div class="form-item">
           <label for="name">お名前</label>
@@ -93,7 +91,7 @@
     </article>
   </main>
   <footer>
-    <small class="copyright">©︎Sample Site</small>
+    <small class="copyright">TwinK</small>
   </footer>
   <script src="./js/animation.js"></script>
 </body>
